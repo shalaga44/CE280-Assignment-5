@@ -1,0 +1,13 @@
+L
+add 10
+add 20
+add 30
+add 40
+print
+remove 10
+print
+removeAt 1
+print
+search 40
+
+Exit
