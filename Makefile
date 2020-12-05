@@ -71,7 +71,7 @@ $(TARGET_TEST_NO__START): $(OBJS_BUILD_TESTS_NO_START) $(HEADS_TEST)
 
 run: all
 	$(info -----------------run---------------------)
-	@./$(TARGET)
+	@./$(TARGET) < $(TARGET_PATH)/src/in.txt
 
 run_test: $(TARGET_TEST)
 	$(info ---------------run_test------------------)

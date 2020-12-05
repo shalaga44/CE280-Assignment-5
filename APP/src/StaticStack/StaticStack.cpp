@@ -12,7 +12,7 @@ StaticStack::StaticStack(int initialCapacity) {
 }
 
 int StaticStack::push(int item) {
-    if (size==capacity)
+    if (size == capacity)
         throw std::exception();
     array[size++] = item;
     return 0;
@@ -26,5 +26,20 @@ int StaticStack::pop() {
 
 bool StaticStack::isEmpty() {
     return size == 0;
+}
+
+std::ostream &operator<<(std::ostream &os, const StaticStack &stack) {
+    if (stack.size == 0) {
+        os << "[]";
+        return os;
+    }
+    os << "[";
+    for (int i = 0; i < stack.size - 1; ++i)
+        os << stack.array[i] << ", ";
+
+
+    os << stack.array[stack.size - 1] << "]";
+    return os;
+
 }
 

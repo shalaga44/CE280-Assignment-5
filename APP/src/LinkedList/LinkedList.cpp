@@ -5,7 +5,7 @@
 #include "../../include/LinkedList/LinkedList.h"
 #include <exception>
 #include <cstdint>
-
+#include <iostream>
 
 void LinkedList::add(int item) {
     if (isEmpty()) {

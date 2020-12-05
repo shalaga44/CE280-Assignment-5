@@ -40,3 +40,18 @@ int DynamicQueue::rear() {
     return last->data;
 
 }
+
+std::ostream &operator<<(std::ostream &os, const DynamicQueue &queue) {
+    if (queue.size == 0) {
+        os << "[]";
+        return os;
+    }
+    os << "[";
+    DynamicQueue::Node *current = queue.head;
+    while (current != queue.last) {
+        os << current->data << ", ";
+        current = current->next;
+    }
+    os << current->data << "]";
+    return os;
+}

@@ -1,5 +1,7 @@
 #pragma once
 
+#include <ostream>
+
 class DynamicQueue {
 
 public:
@@ -25,4 +27,6 @@ public:
     int front();
 
     int rear();
+
+    friend std::ostream &operator<<(std::ostream &os, const DynamicQueue &queue);
 };

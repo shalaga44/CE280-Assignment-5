@@ -9,5 +9,24 @@ print
 removeAt 1
 print
 search 40
-
+print
+size
+search 40
+print
+Exit
+S
+print
+push 10
+push 20
+push 30
+print
+pop
+print
+Exit
+Q
+print
+enqueue 44
+print
+dequeue
+Exit
 Exit

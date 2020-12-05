@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include <ostream>
+
 class StaticStack {
 public:
     int capacity;
@@ -16,5 +18,7 @@ public:
 
     int push(int item);
     bool isEmpty();
+
+    friend std::ostream &operator<<(std::ostream &os, const StaticStack &stack);
 };
 
