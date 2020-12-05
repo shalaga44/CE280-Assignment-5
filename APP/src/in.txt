@@ -26,7 +26,11 @@ Exit
 Q
 print
 enqueue 44
+enqueue 55
+enqueue 77
+enqueue 99
 print
 dequeue
+print
 Exit
 Exit

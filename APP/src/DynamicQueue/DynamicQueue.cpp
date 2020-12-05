@@ -46,6 +46,10 @@ std::ostream &operator<<(std::ostream &os, const DynamicQueue &queue) {
         os << "[]";
         return os;
     }
+    if (queue.size == 1) {
+        os << "[" << queue.head->data << "]";
+        return os;
+    }
     os << "[";
     DynamicQueue::Node *current = queue.head;
     while (current != queue.last) {

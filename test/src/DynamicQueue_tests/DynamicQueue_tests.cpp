@@ -51,6 +51,11 @@ void enqueue_dequeue() {
     for (int i: testingData)
         queue.enqueue(i);
 
-    for (int i: testingData)
-        assert(queue.dequeue() == i);
+
+    for (int i: testingData) {
+
+        int item = queue.dequeue();
+        cout << item << endl;
+        assert(item == i);
+    }
 }

@@ -71,9 +71,9 @@ void queueLoop() {
     cout << "Queue::Type \"print\" to list all the item" << endl;
     while (true) {
         if (input == "Exit") break;
-
         cout << "Queue>>> ";
         cin >> input;
+        cout << "input: "<< input << endl;
         if (input == "enqueue") {
             cout << "\nQueue::enqueue>>> ";
             cin >> input;
@@ -82,7 +82,9 @@ void queueLoop() {
             cout << endl;
         } 
         else if (input == "dequeue") {
-            cout << "\nQueue::dequeue>>>  " << queue.dequeue() << endl;
+            cout << "Fuuuuuuuuuuuuuck" << endl;
+            int item = queue.dequeue();
+            cout << "\nQueue::dequeue>>>  " << item << endl;
         } 
         else if (input == "print") {
             cout << "\nQueue::print>>> ";
