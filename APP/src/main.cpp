@@ -77,8 +77,7 @@ void queueLoop() {
             int item = stoi(input);
             queue.enqueue(item);
             cout << endl;
-        }
-        else if (input == "dequeue") {
+        } else if (input == "dequeue") {
             cout << "\nQueue::dequeue>>>  " << queue.dequeue() << endl;
         } else if (input == "print") {
             cout << "\nQueue::print>>> ";
@@ -123,7 +122,7 @@ void LinkedListLoop() {
             if (list.isEmpty())
                 std::cerr << "List is empty" << endl;
             else if (index == -1)
-                std::cerr << "Item not exist" << stoi(input) << endl;
+                std::cerr << "Item not exist: " << stoi(input) << endl;
             else
                 list.removeAt(index);
             cout << endl;

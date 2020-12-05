@@ -62,6 +62,10 @@ std::ostream &operator<<(std::ostream &os, const LinkedList &list) {
         os << "[]";
         return os;
     }
+    if (list.size == 1) {
+        os << "[" << list.head->data << "]";
+        return os;
+    }
     os << "[";
     LinkedList::Node *current = list.head;
     while (current != list.last) {
@@ -86,6 +90,14 @@ int LinkedList::search(int item) const {
 }
 
 void LinkedList::removeAt(int index) {
+    if (index == size - 1) {
+        removeLast();
+        return;
+    }
+    if (index == 0) {
+        removeHead();
+        return;
+    }
     if (index < 0)
         throw std::exception();
     if (index > size - 1)
