@@ -2,7 +2,7 @@
 // Created by shalaga44 on 12/3/20.
 //
 
-#include "../../include/StaticStack/StaticStack.h"
+#include "StaticStack/StaticStack.h"
 #include <exception>
 
 StaticStack::StaticStack(int initialCapacity) {
@@ -24,7 +24,7 @@ int StaticStack::pop() {
     return array[--size];
 }
 
-bool StaticStack::isEmpty() {
+bool StaticStack::isEmpty() const {
     return size == 0;
 }
 

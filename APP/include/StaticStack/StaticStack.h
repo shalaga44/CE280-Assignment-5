@@ -17,7 +17,7 @@ public:
     int pop();
 
     int push(int item);
-    bool isEmpty();
+    bool isEmpty() const;
 
     friend std::ostream &operator<<(std::ostream &os, const StaticStack &stack);
 };

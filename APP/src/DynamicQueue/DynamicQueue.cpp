@@ -1,4 +1,4 @@
-#include "../../include/DynamicQueue/DynamicQueue.h"
+#include "DynamicQueue/DynamicQueue.h"
 #include <exception>
 
 void DynamicQueue::enqueue(int item) {

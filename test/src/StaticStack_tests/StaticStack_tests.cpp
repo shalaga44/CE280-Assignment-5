@@ -1,13 +1,9 @@
 //
 // Created by shalaga44 on 12/3/20.
 //
+#include "StaticStack/StaticStack.h"
+
 #include <cassert>
-#include <iostream>
-
-using std::cout;
-using std::endl;
-
-#include "../../../APP/include/StaticStack/StaticStack.h"
 
 const int testingDataSize = 6;
 int testingData[testingDataSize] = {20, 30, 44, 50, 60, 40};

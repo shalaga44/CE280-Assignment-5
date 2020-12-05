@@ -43,26 +43,23 @@ void StackLoop() {
 
         cout << "stack>>> ";
         cin >> input;
-         if (input == "push") {
+        if (input == "push") {
             cout << "\nstack::push>>> ";
             cin >> input;
             int item = stoi(input);
             stack.push(item);
             cout << endl;
-        }
-        else if (input == "pop") {
+        } else if (input == "pop") {
             cout << "\nstack::pop>>>  " << stack.pop() << endl;
-        }
-        else if (input == "print") {
+        } else if (input == "print") {
             cout << "\nstack::print>>> ";
             cout << stack << endl;
-        }
-        else break;
+        } else break;
     }
 }
 
 void queueLoop() {
-    DynamicQueue queue ;
+    DynamicQueue queue;
     cout << "INFO::CREATED::DynamicQueue" << endl;
     std::string input;
     cout << "Queue::Type \"Exit\" to Exit from Queue" << endl;
@@ -73,24 +70,20 @@ void queueLoop() {
         if (input == "Exit") break;
         cout << "Queue>>> ";
         cin >> input;
-        cout << "input: "<< input << endl;
+        cout << "input: " << input << endl;
         if (input == "enqueue") {
             cout << "\nQueue::enqueue>>> ";
             cin >> input;
             int item = stoi(input);
             queue.enqueue(item);
             cout << endl;
-        } 
+        }
         else if (input == "dequeue") {
-            cout << "Fuuuuuuuuuuuuuck" << endl;
-            int item = queue.dequeue();
-            cout << "\nQueue::dequeue>>>  " << item << endl;
-        } 
-        else if (input == "print") {
+            cout << "\nQueue::dequeue>>>  " << queue.dequeue() << endl;
+        } else if (input == "print") {
             cout << "\nQueue::print>>> ";
             cout << queue << endl;
-        } 
-        else break;
+        } else break;
     }
 }
 
@@ -113,20 +106,16 @@ void LinkedListLoop() {
             cin >> input;
             list.add(stoi(input));
             cout << endl;
-        } 
-        else if (input == "search") {
+        } else if (input == "search") {
             cout << "\nLinkedList::search>>> ";
             cin >> input;
             cout << list.search(stoi(input)) << endl;
-        } 
-        else if (input == "print") {
+        } else if (input == "print") {
             cout << "\nLinkedList::print>>> ";
             cout << list << endl;
-        } 
-        else if (input == "size") {
+        } else if (input == "size") {
             cout << "\nLinkedList::size>>> " << list.size << endl;
-        } 
-        else if (input == "remove") {
+        } else if (input == "remove") {
             cout << "\nLinkedList::remove>>> ";
             cin >> input;
 
@@ -138,8 +127,7 @@ void LinkedListLoop() {
             else
                 list.removeAt(index);
             cout << endl;
-        } 
-        else if (input == "removeAt") {
+        } else if (input == "removeAt") {
             cout << "\nLinkedList::removeAt>>> ";
             cin >> input;
 

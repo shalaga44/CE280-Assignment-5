@@ -2,9 +2,8 @@
 // Created by shalaga44 on 12/3/20.
 //
 
-#include "../../include/LinkedList/LinkedList.h"
+#include "LinkedList/LinkedList.h"
 #include <exception>
-#include <cstdint>
 #include <iostream>
 
 void LinkedList::add(int item) {
@@ -73,7 +72,7 @@ std::ostream &operator<<(std::ostream &os, const LinkedList &list) {
     return os;
 }
 
-int LinkedList::search(int item) {
+int LinkedList::search(int item) const {
     Node *current = head;
     int counter = 0;
     while (current != last) {

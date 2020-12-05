@@ -39,7 +39,7 @@ public:
 
     void removeLast();
 
-    int search(int item);
+    int search(int item) const;
 
     void removeAt(int index);
 

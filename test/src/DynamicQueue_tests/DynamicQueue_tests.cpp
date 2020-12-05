@@ -1,8 +1,6 @@
-#include "../../../APP/include/DynamicQueue/DynamicQueue.h"
+#include "DynamicQueue/DynamicQueue.h"
 #include <cassert>
-#include <iostream>
 
-using namespace std;
 const int testingDataSize = 6;
 int testingData[testingDataSize] = {20, 30, 44, 50, 60, 40};
 
@@ -52,10 +50,7 @@ void enqueue_dequeue() {
         queue.enqueue(i);
 
 
-    for (int i: testingData) {
+    for (int i: testingData)
+        assert(queue.dequeue() == i);
 
-        int item = queue.dequeue();
-        cout << item << endl;
-        assert(item == i);
-    }
 }

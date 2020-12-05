@@ -1,5 +1,5 @@
 
-#include "../../../APP/include/LinkedList/LinkedList.h"
+#include "LinkedList/LinkedList.h"
 #include <iostream>
 #include <string>
 #include <cassert>
